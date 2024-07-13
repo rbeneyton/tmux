@@ -874,7 +874,7 @@ format_cb_history_bytes(struct format_tree *ft)
 	for (i = 0; i < gd->hsize + gd->sy; i++) {
 		gl = grid_get_line(gd, i);
 		size += gl->cellsize * sizeof *gl->celldata;
-		size += gl->extdsize * sizeof *gl->extddata;
+		size += gl->extdcapa * sizeof *gl->extddata;
 	}
 	size += (gd->hsize + gd->sy) * sizeof *gl;
 

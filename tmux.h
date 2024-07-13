@@ -756,6 +756,7 @@ struct grid_line {
 
 	struct grid_extd_entry	*extddata;
 	u_int			 extdsize;
+	u_int			 extdcapa;
 
 	int			 flags;
 	time_t			 time;
